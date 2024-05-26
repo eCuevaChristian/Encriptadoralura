@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,25 +14,25 @@
     <header>
         <img src="/imagenes/Frame 6.png" alt="logo de alura" class="logo">
     </header>
-
+    
     <main>
         <section>
-            <textarea class="textarea" placeholder="Ingrese el Texto aqui" cols="30" rows="10" ></textarea>
+            <textarea class="textarea" placeholder="Ingrese el Texto aquí"></textarea>
             <div>
                 <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
-
-        <section>
-            <textarea cols="20" rows="10" class="mensaje"></textarea>
-            <div>
-                <button class="copiar">Copiar</button>
-            </div>
+        <section class="mensaje-contenedor">
+            <textarea class="mensaje" placeholder="Debes Ingresar el texto que quieras encriptar o desencriptar"></textarea>
+            <button class="copiar" onclick="copiarTexto()">Copiar</button>
         </section>
     </main>
+    <footer>Desarrollado por Christian E. Taipe Cueva</footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
