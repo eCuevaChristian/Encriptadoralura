@@ -52,7 +52,7 @@ main {
  }
 .mensaje {
     background: white;
-    background-image: url("/imagenes/Muñeco.png");
+    background-image: url(imagenes/Muñeco.png);
     background-position: center;
     background-size: 95%;
     width: 46%;
@@ -66,7 +66,7 @@ main {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-position: relative;
+    position: relative;
 }
 
 .mensaje-contenedor {
